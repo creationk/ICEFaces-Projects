@@ -1,0 +1,16 @@
+<html id="form" xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ice="http://www.icesoft.com/icefaces/component">
+<f:view>
+	<ice:outputDeclaration doctypeRoot="HTML"
+		doctypePublic="-//W3C//DTD HTML 4.01 Transitional//EN"
+		doctypeSystem="http://www.w3.org/TR/html4/loose.dtd" />
+	You have reached exception page
+	<ice:panelGrid columns="2"> 
+	Message: <ice:outputText style="color: red;"
+			value="#{sessionScope.error_message}" /> 
+	Type: <ice:outputText value="#{sessionScope.error_exception_type}" /> 
+	Status Code: <ice:outputText value="#{sessionScope.error_status_code}" />
+	</ice:panelGrid>
+</f:view>
+</html>

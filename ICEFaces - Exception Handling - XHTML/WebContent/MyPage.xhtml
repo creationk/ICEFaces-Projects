@@ -1,0 +1,16 @@
+<html xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ice="http://www.icesoft.com/icefaces/component">
+<f:view>
+	<ice:outputDeclaration doctypeRoot="HTML"
+		doctypePublic="-//W3C//DTD HTML 4.01 Transitional//EN"
+		doctypeSystem="http://www.w3.org/TR/html4/loose.dtd" />
+	<body>
+		<ice:form>
+			<ice:inputText value="#{bean.input}" />
+			<ice:commandButton value="Click Here"
+				actionListener="#{bean.validate}" />
+		</ice:form>
+	</body>
+</f:view>
+</html>
